@@ -10,7 +10,7 @@ function Map({cord}) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       
-      <Marker position={[cord[0], cord[1]]} icon={new Icon({iconUrl:"./marker.png", iconSize: [40, 40], iconAnchor: [20, 41]})} />
+      <Marker position={[cord[0], cord[1]]} icon={new Icon({iconUrl:"https://res.cloudinary.com/dhoha33eh/image/upload/v1716642370/marker_nfyney.png", iconSize: [40, 40], iconAnchor: [20, 41]})} />
         
       
     </MapContainer>
