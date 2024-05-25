@@ -1,5 +1,6 @@
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import {Icon} from 'leaflet'
 
 function Map({cord}) {
   return (
@@ -8,9 +9,10 @@ function Map({cord}) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[cord[0], cord[1]]}>
+      
+      <Marker position={[cord[0], cord[1]]} icon={new Icon({iconUrl:"./marker.png", iconSize: [40, 40], iconAnchor: [20, 41]})} />
         
-      </Marker>
+      
     </MapContainer>
   );
 }
